@@ -1,4 +1,6 @@
-/* Empty. Add your own CSS if you like */
+.timePickerChildDiv {
+	text-align: center;
+}
 
 .timePickerColon {
   padding-top: 38px;

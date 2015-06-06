@@ -1,6 +1,6 @@
 {
   "name": "ionic-timepicker",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "authors": [
     "rajeshwarpatlolla <rajeshwar.patlolla@gmail.com>"
   ],
@@ -11,8 +11,6 @@
     "./dist/style.css"
   ],
   "keywords": [
-    "ionic",
-    "timepicker",
     "ionic",
     "timepicker",
     "ionic-timepicker"
@@ -27,6 +25,6 @@
     "tests"
   ],
   "dependencies": {
-    "ionic": "~0.9.27"
+    "ionic": "~1.0.0"
   }
 }

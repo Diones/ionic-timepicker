@@ -37,38 +37,29 @@ angular.module('modulename', ['ionic', 'ionic-timepicker']){
 }
 ````
 
-4) Use the below format in your template's corresponding controller
+4) TimePicker options
 
-````javascript
-$scope.slots = {epochTime: 12600, format: 12, step: 15};
-````
+```
+{
+    time:          init time               (Default: new Date())
+    step:          minutes step 1-59       (Default: 10)
+    format:        clock format 12 or 24   (Default: 12)
+    popupTitle:    popup title             (Default: 12-Hour Format or 24-Hour Format)
+    btnCloseText:  button close label      (Default: 'Close')
+    btnSetText:    button set label        (Default: 'Set')
+    btnCloseType:  button close design     (Default: 'button-default')
+    btnSetType:    button set design       (Default: 'button-positive')
+}
+```
+
 
 5) Then use the below format in your template / html file
 
 ````html
-<ionic-timepicker etime="slots.epochTime" format="slots.format" step="slots.step">    
-	<button class="button button-block button-positive"> {{slots.epochTime}} </button>
+<ionic-timepicker time="currentDate" step="15" format="24" popup-title="{{'POPUP.TITLE' | translate}}" btn-close-text="{{'btn.cancel' | translate}}" btn-set-text="{{'BUTTON.SET' | translate}}" btn-set-text="{{'BUTTON.CLOSE' | translate}}" btn-close-type="button-assertive" btn-set-type="button-positive">
+    <button class="button button-outline icon-left ion-android-time button-positive"> {{ currentDate | date: 'hh:mm a'}} </button>
 </ionic-timepicker>
 ````
-
-
-a) `ionic-timepicker` is the directive, to which we can pass required vales.
-
-b) `etime` takes epoch time, which will be converted to UTC.
-	
-c) `format` indicates 12 hour or 24 hour format. It can take two values, 12 or 24.
-
-d) `step` indicates minute increment. It can take two values, 1 or 15.
-
-You can also use any of my [directives](https://github.com/rajeshwarpatlolla/my-angularjs-directives) to convert the epoch time to string format.
-
-Tested with `angular#1.3.6` and `ionic#1.0.0-beta.14`. 
-
- 
-##Screen Shots:
- 
-![12-Hour](https://lh6.googleusercontent.com/-UL18wuskI_A/VNHkGj8tdwI/AAAAAAAADdU/5tBbZcF6_es/w328-h494-no/TimePicker-1.jpg "12-Hour")
-![24-Hour](https://lh5.googleusercontent.com/-xgqgH2zRSuA/VNHkGQ6R8cI/AAAAAAAADdQ/5gGJ1nUqmA0/w328-h494-no/TimePicker-2.jpg "24-Hour.")
 
 ##Versions:
 
@@ -80,8 +71,15 @@ The whole time picker functionality has been implemented, and can be installed w
 ### 2) v0.1.1
 Directive name has been modified.
 
-### 2) v0.1.2
+### 3) v0.1.2
 If the minutes and hours are less than 10, then 0 will be prepended to the value of minutes/hours.
+
+### 4) v1.0.0
+Attributes have been modified.
+Option for popup title and buttons label.
+Option for button design (color, type).
+Minutes increment/decrement improved.
+CSS: popup content centralization.
 
 ##License:
 [MIT](https://github.com/rajeshwarpatlolla/ionic-timepicker/blob/master/LICENSE.MD "MIT")
