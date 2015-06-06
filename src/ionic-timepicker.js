@@ -4,7 +4,7 @@
 angular.module('ionic-timepicker', ['ionic', 'ionic-timepicker.templates'])
 
 // Defining `ionicTimepicker` directive
-.directive('ionicTimepicker', function($ionicPopup, $filter) {
+.directive('ionicTimepicker', ['$ionicPopup', '$filter', function($ionicPopup, $filter) {
     return {
         restrict: 'AE',
         replace: true,
@@ -107,4 +107,4 @@ angular.module('ionic-timepicker', ['ionic', 'ionic-timepicker.templates'])
             });
         }
     };
-});
+}]);
