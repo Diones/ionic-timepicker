@@ -2,7 +2,7 @@
 
 To install `ionic-timepicker` from this fork, utilize **`bower install ionic-timepicker-dfandrade`**.
 
-**ORIGINAL:** This is an alternative version of `ionic-timepicker` bower component which can be used with any Ionic framework's application.
+**ORIGINAL:** This is a `ionic-timepicker` bower component which can be used with any Ionic framework's application.
 
 [View Demo](http://rajeshwarpatlolla.github.io/TimePickerForIonicFramework/demo/ "Demo") 
 
