@@ -2,7 +2,8 @@
   "name": "ionic-timepicker",
   "version": "1.0.0",
   "authors": [
-    "rajeshwarpatlolla <rajeshwar.patlolla@gmail.com>"
+    "rajeshwarpatlolla <rajeshwar.patlolla@gmail.com>",
+    "dionesandrade <diones.andrade@gmail.com>"
   ],
   "description": "A timepicker for Ionic framework",
   "main": [
