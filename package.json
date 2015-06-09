@@ -1,13 +1,16 @@
 {
   "name": "ionic-timepicker",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A time picker for IONIC framework",
   "main": "",
   "scripts": {},
-  "author": "https://github.com/rajeshwarpatlolla, rajeshwar.patlolla@gmail.com",
+  "authors": [
+    "rajeshwarpatlolla <rajeshwar.patlolla@gmail.com>",
+    "dionesandrade <diones.andrade@gmail.com>"
+  ],
   "license": "MIT",
   "dependencies": {
-    
+    "ionic": "~1.0.0"
   },
   "devDependencies": {
     "gulp": "~3.8.11",
