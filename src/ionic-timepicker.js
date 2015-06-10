@@ -24,7 +24,7 @@ angular.module('ionic-timepicker', ['ionic', 'ionic-timepicker.templates'])
             element.on("click", function() {
 
                 scope.timePicker = {
-                    time: angular.isDefined(scope.time) ? scope.time : new Date(),
+                    time: new Date(scope.time.getTime()),
                     step: angular.isDefined(scope.step) && scope.step > 0 && scope.step < 60 ? Number(scope.step) : 10,
                     format: angular.isDefined(scope.format) && scope.format == 24 ? 24 : 12,
                     popupTitle: '',

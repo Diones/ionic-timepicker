@@ -15,7 +15,7 @@ To install `ionic-timepicker` from this fork, utilize **`bower install ionic-tim
 
 1) In your project repository install the ionic time picker using bower
 
-    bower install ionic-timepicker --save-dev
+    bower install ionic-timepicker-dfandrade --save-dev
     
 2) Then you can see the following directory structure see in your project folder
    
@@ -24,11 +24,11 @@ To install `ionic-timepicker` from this fork, utilize **`bower install ionic-tim
 Give the path of  `style.css, templates.js and ionic-timepicker.js` in your `index.html` file.
 
 ````html
-<link href="lib/ionic-timepicker/dist/style.css" rel="stylesheet">
+<link href="lib/ionic-timepicker-dfandrade/dist/style.css" rel="stylesheet">
 
 <!-- path to ionic/angularjs js -->
-<script src="lib/ionic-timepicker/dist/templates.js"></script>
-<script src="lib/ionic-timepicker/dist/ionic-timepicker.js"></script>
+<script src="lib/ionic-timepicker-dfandrade/dist/templates.js"></script>
+<script src="lib/ionic-timepicker-dfandrade/dist/ionic-timepicker.js"></script>
 ````    
     
 3) In your application module inject the dependency `ionic-timepicker`, in order to work with the ionic time picker
@@ -42,16 +42,14 @@ angular.module('modulename', ['ionic', 'ionic-timepicker']){
 4) TimePicker options
 
 ```
-{
-    time:          init time               (Default: new Date())
-    step:          minutes step 1-59       (Default: 10)
-    format:        clock format 12 or 24   (Default: 12)
-    popupTitle:    popup title             (Default: 12-Hour Format or 24-Hour Format)
-    btnCloseText:  button close label      (Default: 'Close')
-    btnSetText:    button set label        (Default: 'Set')
-    btnCloseType:  button close design     (Default: 'button-default')
-    btnSetType:    button set design       (Default: 'button-positive')
-}
+    time:            init time               **Required
+    step:            minutes step 1-59       (Default: 10)
+    format:          clock format 12 or 24   (Default: 12)
+    popup-title:     popup title             (Default: 12-Hour Format or 24-Hour Format)
+    btn-close-text:  button close label      (Default: 'Close')
+    btn-set-text:    button set label        (Default: 'Set')
+    btn-close-type:  button close design     (Default: 'button-default')
+    btn-set-type:    button set design       (Default: 'button-positive')
 ```
 
 
@@ -77,11 +75,14 @@ Directive name has been modified.
 If the minutes and hours are less than 10, then 0 will be prepended to the value of minutes/hours.
 
 ### 4) v1.0.0
-Attributes have been modified.
-Option for popup title and buttons label.
-Option for button design (color, type).
-Minutes increment/decrement improved.
-CSS: popup content centralization.
+* Attributes have been modified.
+* Option for popup title and buttons label.
+* Option for button design (color, type).
+* Minutes increment/decrement improved.
+* CSS: popup content centralization.
+
+### 4) v1.0.1
+Bug Fix. Time reference being changed without pressing set button.
 
 ##License:
 [MIT](https://github.com/rajeshwarpatlolla/ionic-timepicker/blob/master/LICENSE.MD "MIT")
