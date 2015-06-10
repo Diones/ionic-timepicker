@@ -81,7 +81,7 @@ If the minutes and hours are less than 10, then 0 will be prepended to the value
 * Minutes increment/decrement improved.
 * CSS: popup content centralization.
 
-### 4) v1.0.1
+### 5) v1.0.1
 Bug Fix. Time reference being changed without pressing set button.
 
 ##License:
