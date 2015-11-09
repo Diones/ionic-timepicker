@@ -84,6 +84,9 @@ If the minutes and hours are less than 10, then 0 will be prepended to the value
 ### 5) v1.0.1
 Bug Fix. Time reference being changed without pressing set button.
 
+### 6) v1.0.2
+Fixing ionic version dependency.
+
 ##License:
 [MIT](https://github.com/rajeshwarpatlolla/ionic-timepicker/blob/master/LICENSE.MD "MIT")
 
